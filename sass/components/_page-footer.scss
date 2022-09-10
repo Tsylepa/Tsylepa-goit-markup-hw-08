@@ -1,0 +1,16 @@
+@import '../components/aboutus';
+@import '../components/joinus';
+@import '../components/subscribe';
+
+
+
+.page-footer {
+  @extend %flexBetween;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $contrast-base-color;
+
+  &__container {
+    align-items: baseline;
+  }
+}

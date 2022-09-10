@@ -1,0 +1,42 @@
+@mixin socials($color, $bgColor, $alterColor, $alterBgColor) {
+  @extend %flexBetween;
+
+  &__link {
+    @extend %flexCenter;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $color;
+    background-color: $bgColor;
+    transition: color $transition-function,
+      background-color $transition-function;
+
+    &:hover,
+    &:focus {
+      color: $alterColor;
+      background-color: $alterBgColor;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
+.socials {
+  @include socials($icon-color, transparent, $contrast-color, $accent);
+  margin-top: 16px;
+}
+
+
+.joinus .socials {
+  @include socials(
+    $contrast-color,
+    rgba(255, 255, 255, 0.1),
+    $contrast-color,
+    $accent
+  );
+  margin-top: 20px;
+}

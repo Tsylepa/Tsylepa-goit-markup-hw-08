@@ -1,0 +1,20 @@
+@import '../components/pages';
+@import '../components/contacts';
+
+.page-header {
+  @extend %flexBetween;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.pages {
+  margin-left: 93px;
+}
+
+.contacts {
+  margin-left: auto;
+}

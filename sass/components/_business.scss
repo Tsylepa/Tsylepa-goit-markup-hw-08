@@ -1,0 +1,22 @@
+.business {
+  padding-top: 0;
+}
+
+.business__list {
+  @extend %flexBetween;
+}
+
+.business__item {
+  position: relative;
+}
+
+.business__thumb {
+  position: absolute;
+  @extend %flexCenter;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  @include title($contrast-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

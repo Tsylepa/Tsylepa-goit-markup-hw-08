@@ -20,7 +20,7 @@
   padding: 40px;
   border-radius: 4px;
   background-color: $contrast-color;
-  
+
   @media screen and (min-width: 1200px) {
     max-width: 528px;
   }
@@ -111,15 +111,17 @@
 
 .modal__check-label {
   @include flexCenter;
-  align-items: flex-start;
   text-align: left;
   margin-top: 20px;
   color: $primary-color;
   font-size: 12px;
-  line-height: 1.17;  
-  // font-size: 14px;
-  // line-height: 1.71;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__link {
@@ -153,7 +155,7 @@
   &:hover + &-icon {
     outline: 1px solid $button-color;
   }
-  
+
   &:checked + &-icon {
     fill: $contrast-color;
     background-color: $accent;

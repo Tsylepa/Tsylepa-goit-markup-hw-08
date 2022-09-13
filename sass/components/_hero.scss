@@ -14,18 +14,20 @@
 }
 
 .hero__title {
-  // width: 696px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
+
   color: $contrast-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {

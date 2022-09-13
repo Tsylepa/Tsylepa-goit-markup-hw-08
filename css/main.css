@@ -51,6 +51,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__heading {
   margin-bottom: 30px;
@@ -59,6 +65,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .section__heading {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .container {
@@ -528,6 +540,13 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .hero__button {
   margin-top: 30px;
@@ -694,15 +713,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   text-align: left;
   margin-top: 20px;
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .modal__check-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__link {
@@ -849,6 +871,11 @@ img {
 .business {
   display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .business {
+    display: block;
+  }
 }
 
 .business__list {
@@ -1222,12 +1249,14 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.joinus {
-  min-width: 206px;
-}
 @media screen and (max-width: 767px) {
   .joinus {
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .joinus {
+    margin-left: 70px;
   }
 }
 
@@ -1240,9 +1269,6 @@ img {
   color: #ffffff;
 }
 
-.subscribe {
-  margin-left: 93px;
-}
 @media screen and (max-width: 1199px) {
   .subscribe {
     width: 100%;
@@ -1252,6 +1278,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe {
     width: 570px;
+    margin-left: 93px;
   }
 }
 

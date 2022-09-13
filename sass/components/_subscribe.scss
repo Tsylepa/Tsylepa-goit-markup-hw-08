@@ -1,5 +1,13 @@
 .subscribe {
   margin-left: 93px;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 
 .subscribe__title {
@@ -7,12 +15,21 @@
 }
 
 .subscribe__field {
-  @extend %flexCenter;
+  @include flexCenter;
+  flex-direction: column;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    @include flexStart;
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
 
 .subscribe__input {
-  width: 358px;
+  // width: 358px;
+  width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
   color: $contrast-color;
   background-color: transparent;
@@ -22,12 +39,18 @@
 }
 
 .subscribe__button {
-  @extend %flexCenter;
+  @include flexCenter;
   min-width: 200px;
   height: 50px;
-  margin-left: 12px;
+  // margin-left: 12px;
+  margin-top: 20px;
   border-radius: 4px;
   background-color: $accent;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .subscribe__icon {

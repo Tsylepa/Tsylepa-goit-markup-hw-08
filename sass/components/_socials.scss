@@ -1,8 +1,8 @@
 @mixin socials($color, $bgColor, $alterColor, $alterBgColor) {
-  @extend %flexBetween;
+  @include flexBetween;
 
   &__link {
-    @extend %flexCenter;
+    @include flexCenter;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -25,11 +25,44 @@
   }
 }
 
-.socials {
-  @include socials($icon-color, transparent, $contrast-color, $accent);
-  margin-top: 16px;
+.page-header .socials {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: -15px;
+
+    &__item {
+      // max-width: calc( (100% - 3*10px) / 2 );
+      margin-right: 10px;
+      margin-bottom: 15px;
+      display: flex;
+    }
+
+    &__item:not(:last-child)::after {
+      content: "";
+      height: 22px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+    }
+
+    &__link {
+      display: inline;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: $accent;
+    }
+  }
 }
 
+.team .socials {
+  @include socials($icon-color, transparent, $contrast-color, $accent);
+  @include flexCenter;
+  margin-top: 16px;
+}
 
 .joinus .socials {
   @include socials(
@@ -38,5 +71,9 @@
     $contrast-color,
     $accent
   );
+  justify-content: center;
   margin-top: 20px;
+  &__item:not(:first-child) {
+    margin-left: 10px;
+  }
 }

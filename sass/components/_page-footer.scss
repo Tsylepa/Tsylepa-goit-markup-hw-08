@@ -1,16 +1,30 @@
-@import '../components/aboutus';
-@import '../components/joinus';
-@import '../components/subscribe';
-
-
+@import "../components/aboutus";
+@import "../components/joinus";
+@import "../components/subscribe";
 
 .page-footer {
-  @extend %flexBetween;
+  // @include flexBetween;
+  min-width: 320px;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   background-color: $contrast-base-color;
 
-  &__container {
-    align-items: baseline;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    &__container {
+      @include flexBetween;
+      align-items: baseline;
+      flex-wrap: wrap;
+      padding: 0 76px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+
+    &__container {
+      @include flexBetween;
+      align-items: baseline;
+    }
   }
 }

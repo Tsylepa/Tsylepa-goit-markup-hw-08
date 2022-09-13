@@ -1,9 +1,10 @@
 .business {
+  display: none;
   padding-top: 0;
 }
 
 .business__list {
-  @extend %flexBetween;
+  @include flexBetween;
 }
 
 .business__item {
@@ -12,7 +13,7 @@
 
 .business__thumb {
   position: absolute;
-  @extend %flexCenter;
+  @include flexCenter;
   left: 0;
   bottom: 0;
   width: 100%;

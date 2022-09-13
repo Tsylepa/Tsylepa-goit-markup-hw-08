@@ -1,6 +1,9 @@
 .joinus {
   min-width: 206px;
-  margin-left: 70px;
+  // margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .joinus__title {

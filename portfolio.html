@@ -22,52 +22,82 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <a href="./" class="page-header__logo logo link"
           ><span class="accent">Web</span>Studio</a
         >
+        <button
+          type="button"
+          class="page-header__button button"
+          aria-expanded="false"
+          data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач меню">
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+            <use class="icon-close" href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <div class="page-header__menu" data-menu>
+          <nav>
+            <ul class="pages list">
+              <li class="pages__item">
+                <a class="link pages__link" href="./"
+                  >Студія</a
+                >
+              </li>
+              <li class="pages__item">
+                <a class="pages__link link pages__link--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="pages__item">
+                <a class="pages__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav>
-          <ul class="pages list">
-            <li class="pages__item">
-              <a class="link pages__link" href="./">Студія</a>
-            </li>
-            <li class="pages__item">
+          <ul class="contacts list">
+            <li class="contacts__item">
               <a
-                class="pages__link pages__link--current link"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="pages__item">
-              <a class="pages__link link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="link contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="link contacts__link" href="tel:+380961111111">
+              class="link contacts__link contacts__link--tel"
+              href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+                >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="link contacts__link contacts__link--email"
+                  href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+          <ul class="socials list">
+            <li class="socials__item">
+              <a class="socials__link link" href="">Instagram</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link" href="">Twitter</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link" href="">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <!-- Main content -->
     <main>
       <section class="section projects">
-        <div class="container">
+        <div class="projects__container container">
           <h1 class="projects__heading">Проекти</h1>
 
           <!-- Filter -->
@@ -110,7 +140,7 @@
                     class="projects__pic"
                     src="./images/project1.jpg"
                     alt="Технокряк"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -133,7 +163,7 @@
                     class="projects__pic"
                     src="./images/project2.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -158,7 +188,7 @@
                     class="projects__pic"
                     src="./images/project3.jpg"
                     alt="Ресторан Seafood"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -181,7 +211,7 @@
                     class="projects__pic"
                     src="./images/project4.jpg"
                     alt="Проєкт Prime"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -204,7 +234,7 @@
                     class="projects__pic"
                     src="./images/project5.jpg"
                     alt="Проєкт Boxes"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -227,7 +257,7 @@
                     class="projects__pic"
                     src="./images/project6.jpg"
                     alt="Inspiration has no Borders"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -250,7 +280,7 @@
                     class="projects__pic"
                     src="./images/project7.jpg"
                     alt="Видання Limited Edition"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -273,7 +303,7 @@
                     class="projects__pic"
                     src="./images/project8.jpg"
                     alt="Проєкт LAB"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -296,7 +326,7 @@
                     class="projects__pic"
                     src="./images/project9.jpg"
                     alt="Growing Business"
-                    width="370" />
+                  />
                   <div class="projects__meta">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -399,5 +429,11 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

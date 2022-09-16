@@ -1,9 +1,6 @@
 .team {
-  background-color: $additional-color;
-}
+  @include socials($icon-color, transparent, $contrast-color, $accent);
 
-.team__list {
-  
   @media screen and (min-width: 767px) {
     @include flexBetween;
   }
@@ -13,49 +10,56 @@
     margin-top: -30px;
     margin-left: -30px;
   }
-}
 
-.team__member {
-  // width: calc((100% - 90px) / 4);
-  background-color: $contrast-color;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &__member {
+    // width: calc((100% - 90px) / 4);
+    background-color: $contrast-color;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 60px) / 2);
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 60px) / 2);
-    margin-top: 30px;
-    margin-left: 30px;
-  }  
-  
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
-    margin-left: 30px;
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $secondary-color;
   }
-}
 
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: $secondary-color;
-}
+  &__position {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 
-.team__position {
-  margin-top: 10px;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+  &__content {
+    padding: 30px;
+  }
 
-.team__content {
-  padding: 30px;
+  &__soc-list {
+    margin-top: 16px;
+  }
 }

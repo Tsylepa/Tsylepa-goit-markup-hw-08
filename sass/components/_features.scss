@@ -2,10 +2,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
 
-.features__list {
-  // justify-content: space-between;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +34,7 @@
   }
 }
 
-.features__item .features__thumb {
+.features__thumb {
   @include flexCenter;
   margin-bottom: 30px;
   padding: 25px;
@@ -47,11 +44,6 @@
 
 .features__icon {
   margin: 0 auto;
-}
-
-.features__heading,
-.projects__heading {
-  display: none;
 }
 
 .features__title {

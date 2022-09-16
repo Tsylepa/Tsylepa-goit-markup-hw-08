@@ -1,9 +1,4 @@
-.clients__container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.clients__list {
+.clients {
   width: 100%;
   @include flexBetween;
   flex-wrap: wrap;

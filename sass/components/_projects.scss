@@ -4,12 +4,12 @@
   }
 }
 
-.projects__list {
+.projects {
   display: flex;
-  width: 100%;
   margin-top: calc(-1 * $grid-gap);
   @media screen and (min-width: 768px) {
-    margin-left: calc(-0.5 * $grid-gap);
+    width: calc(100% + $grid-gap);
+    margin-left: calc(-1* $grid-gap);
   }
   flex-wrap: wrap;
 }
@@ -36,7 +36,8 @@
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow $transition-function;
 
   &:hover,
@@ -96,6 +97,7 @@
 
 .projects__content {
   padding: 24px 20px;
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   border-top: none;
 }

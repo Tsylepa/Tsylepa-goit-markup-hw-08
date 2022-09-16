@@ -6,8 +6,20 @@
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
-}
 
-.joinus__title {
-  @include title($contrast-color);
+  &__title {
+    @include title($contrast-color);
+    margin-bottom: 20px;
+  }
+
+  @include socials(
+    $contrast-color,
+    rgba(255, 255, 255, 0.1),
+    $contrast-color,
+    $accent
+  );
+
+  &__soc-item:not(:first-child) {
+    margin-left: 10px;
+  }
 }

@@ -5,35 +5,9 @@
 }
 
 .projects {
-  display: flex;
-  margin-top: calc(-1 * $grid-gap);
-  @media screen and (min-width: 768px) {
-    width: calc(100% + $grid-gap);
-    margin-left: calc(-1* $grid-gap);
-  }
-  flex-wrap: wrap;
+  @include grid(1, 2, 3, $grid-gap);
 }
 
-.projects__item {
-  display: block;
-  width: 100%;
-  margin-top: $grid-gap;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-basis: calc(
-      (100% - $grid-raw-elements * $grid-gap) / $grid-raw-elements
-    );
-    margin-left: $grid-gap;
-  }
-
-  @media screen and (min-width: 1200px) {
-    $grid-raw-elements: 3;
-    flex-basis: calc(
-      (100% - $grid-raw-elements * $grid-gap) / $grid-raw-elements
-    );
-  }
-}
 
 .projects__link {
   display: flex;

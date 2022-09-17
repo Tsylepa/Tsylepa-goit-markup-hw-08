@@ -1,33 +1,14 @@
 .clients {
-  width: 100%;
-  @include flexBetween;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -15px;
+  @include grid(2, 3, 6, $grid-gap);
   color: $icon-color;
 }
 
 .clients__item {
   height: 92px;
-  margin-top: 30px;
-  margin-left: 30px;
-
-  @media screen and (max-width: 767px) {
-    width: calc((100% - 60px) / 2);
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 90px) / 3);
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 6*30px) / 6);
-  }
 }
 
 .clients__link {
   @include flexCenter;
-  width: 100%;
   height: 100%;
   color: currentColor;
   border: 1px solid $icon-color;

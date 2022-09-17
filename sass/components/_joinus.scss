@@ -18,8 +18,4 @@
     $contrast-color,
     $accent
   );
-
-  &__soc-item:not(:first-child) {
-    margin-left: 10px;
-  }
 }

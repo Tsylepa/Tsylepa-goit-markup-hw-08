@@ -27,7 +27,6 @@
 }
 
 .subscribe__input {
-  // width: 358px;
   width: 100%;
   max-width: 450px;
   padding: 15px 16px;
@@ -42,7 +41,6 @@
   @include flexCenter;
   min-width: 200px;
   height: 50px;
-  // margin-left: 12px;
   margin-top: 20px;
   border-radius: 4px;
   background-color: $accent;

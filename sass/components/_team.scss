@@ -1,11 +1,10 @@
 .team {
-  
+
   @include grid(1, 2, 4, $grid-gap);
 
   @include socials($icon-color, transparent, $contrast-color, $accent);
 
   &__item {
-    // width: calc((100% - 90px) / 4);
     background-color: $contrast-color;
     border-radius: 4px;
     overflow: hidden;

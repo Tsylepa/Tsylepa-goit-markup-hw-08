@@ -44,6 +44,12 @@
   margin-top: 20px;
   border-radius: 4px;
   background-color: $accent;
+  transition: background-color $transition-function;
+
+  &:hover {
+    background-color: $button-color;
+
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: 12px;

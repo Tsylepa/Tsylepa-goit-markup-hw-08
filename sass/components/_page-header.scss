@@ -108,10 +108,12 @@
     z-index: 2;
     transform: translateX(100%);
     opacity: 0;
+    scale: 0;
     transition: transform $transition-function, opacity $transition-function;
 
     &.is-open {
       opacity: 1;
+      scale: 1;
       transform: translateX(0);
     }
   }

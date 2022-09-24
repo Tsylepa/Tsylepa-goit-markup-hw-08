@@ -15,15 +15,15 @@
 
     @media screen and (max-width: 767px) {
       display: flex;
+      align-content: space-between;
+      row-gap: 10px;
+      column-gap: 15px;
       flex-wrap: wrap;
       margin-top: 64px;
-      margin-bottom: -15px;
     }
   }
 
   &__soc-item {
-    margin-right: 10px;
-    margin-bottom: 15px;
     display: flex;
   }
 
@@ -95,7 +95,6 @@
   height: inherit;
 
   @media screen and (max-width: 767px) {
-    display: none;
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
@@ -107,9 +106,13 @@
     background-color: $contrast-color;
     overflow-y: hidden;
     z-index: 2;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform $transition-function, opacity $transition-function;
 
     &.is-open {
-      display: flex;
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }

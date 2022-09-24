@@ -12,6 +12,7 @@
 .projects__link {
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: box-shadow $transition-function;
 
   &:hover,

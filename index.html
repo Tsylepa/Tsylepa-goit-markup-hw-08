@@ -655,7 +655,7 @@
               name="email"
               id="subscribe__email"
               placeholder="E-mail"
-              class="subscribe__input" />
+              class="subscribe__input" required/>
             <button class="subscribe__button button" type="submit">
               Підписатися
               <svg class="subscribe__icon">
@@ -678,19 +678,19 @@
         <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
         <form class="modal__order">
           <label class="modal__label"
-            >Імʼя<input class="modal__input" type="text" name="name" />
+            >Імʼя<input class="modal__input" type="text" name="name" required/>
             <svg class="modal__icon">
               <use href="./images/icons.svg#person"></use>
             </svg>
           </label>
 
           <label class="modal__label"
-            >Телефон<input class="modal__input" type="tel" name="phone" />
+            >Телефон<input class="modal__input" type="tel" name="phone" required/>
             <svg class="modal__icon">
               <use href="./images/icons.svg#phone"></use></svg
           ></label>
           <label class="modal__label"
-            >Пошта<input class="modal__input" type="text" name="name" />
+            >Пошта<input class="modal__input" type="text" name="name" required/>
             <svg class="modal__icon">
               <use href="./images/icons.svg#email"></use></svg
           ></label>
@@ -702,7 +702,7 @@
               placeholder="Введіть текст"></textarea>
           </label>
           <label class="modal__check-label">
-            <input class="modal__check" type="checkbox" />
+            <input class="modal__check" type="checkbox" required/>
             <svg class="modal__check-icon">
               <use href="./images/icons.svg#check"></use>
             </svg>

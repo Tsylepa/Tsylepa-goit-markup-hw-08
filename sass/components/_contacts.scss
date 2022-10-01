@@ -59,7 +59,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -72,10 +73,5 @@
     margin-right: 10px;
     vertical-align: middle;
     fill: currentColor;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }

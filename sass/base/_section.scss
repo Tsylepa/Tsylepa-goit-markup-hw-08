@@ -1,0 +1,36 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--desktop {
+    display: none;
+    padding-top: 0 !important;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &--additional-color {
+    background-color: $additional-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__heading {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,18 @@
+.modal__button {
+  min-width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: $accent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color $transition-function,
+    box-shadow $transition-function;
+
+  &:hover {
+    background-color: $button-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+}
